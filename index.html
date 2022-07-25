@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <header class="cv-header">
       <h1>Resume</h1>
       <h2>Pavelea Marioara</h2>
     </header>
-    <nav>
+    <nav class="nav-bar">
       <ul>
+        <li><a href="./index.html">Home</a></li>
         <li>
           <a href="./page1.html">Studies</a>
         </li>
@@ -19,8 +20,8 @@
         <li><a href="./login.html">Login</a></li>
       </ul>
     </nav>
-    <main>
-      <article>
+    <main class="main-cv">
+      <article class="cv-article">
         <picture>
           <source
             media="(min-width: 650px)"
@@ -30,7 +31,7 @@
           <source media="(min-width: 465px)" srcset="Images/poza2.jpg" />
           <img id="cv-img" src="images/img-default.png" alt="poza cv" />
         </picture>
-        <p>
+        <p class="description-cv">
           I am a UTCN student pursuing a degree in Automation at the Faculty of
           Automation and Computer Science. I consider myself to be a sociable
           and communicative person who is interested by technology and enjoys
@@ -40,7 +41,7 @@
         </p>
       </article>
       <br />
-      <article>
+      <article class="video-article">
         <h3>A video:</h3>
         <video
           id="video-home"
