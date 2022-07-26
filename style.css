@@ -1,26 +1,10 @@
-:root{
---primary-background-color:#E8DED2;
---secondary-background-color:#056676;
---primary-text-color: #5EAAA8;
---link-hover-background-color:#A3D2CA;
-}
-
-.main-cv, footer, .cv-header{
-   margin-left: 210px;
-}
-
 #cv-img{
    border: 2px;
    width: 200px;
-   margin-top: 15px;
-   /* display: inline-block; */
-   /* float: left; */
 }
 
-/* Login */
 #body-login{
-   /* background-color: #060636 ; */
-   background-color:#056676;
+   background-color: #060636 ;
    color:azure;
    text-align: center;
    
@@ -41,18 +25,6 @@ label{
    text-align: right;
 }
 
-.button-submit:hover{
-   background-color: antiquewhite;
-   color:#060636;
-   
-}
-
-.hover-elem:hover{
-color:#E8DED2;
-}
-/*  */
-
-
 #page-title{
    background-image: url(Images/diagonal-motion-lines-white-background_1017-33198.webp);
    background-repeat: no-repeat;
@@ -64,73 +36,6 @@ color:#E8DED2;
   width: 620px;
   height: 540px;
 }
-
-
-
-.description-cv{
-  
-   text-align: left;
-   
-}
-
-.video-article{
-  display: inline-block;
-  text-align: left;
-  position: relative;
-  
-}
-
-.nav-bar ul{
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   width: 200px;
-   background-color: var(--primary-text-color);
-   height: 100%;
-   position: fixed;
-   overflow: auto;
- 
-}
-
-.nav-bar ul li{
-   text-align: center;
-   border-bottom: 1px solid var(--secondary-background-color);
-}
-
-
-.nav-bar a{
-   display: block;
-   color: whitesmoke;
-   padding: 8px 16px;
-   text-decoration: none;
-   
-}
-
-.nav-bar li a:hover{
-   background-color: var(--link-hover-background-color);
-   color: white;
-}
-
-.nav-bar :active{
-   background-color: #056676;
-   color: white;
-}
-
-.cv-header{
-   color: var(--secondary-background-color);
-   background-color: var(--primary-background-color);
-   display: inline-block;
-   margin: 0 auto;
-   text-align: center;
-   width: 100%;
-}
-
-
-
-
-
-
-
 
 
 
