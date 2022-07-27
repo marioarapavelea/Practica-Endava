@@ -1,10 +1,10 @@
 :root {
   /* --primary-background-color:#E8DED2;
-      --petrol-color:#056676;
-      --light-petrol-color: #5EAAA8;
-      --link-hover-background-color:#A3D2CA;
-      --antique-white-color:#faebd7;
-      --dark-blue-background:#060636; */
+        --petrol-color:#056676;
+        --light-petrol-color: #5EAAA8;
+        --link-hover-background-color:#A3D2CA;
+        --antique-white-color:#faebd7;
+        --dark-blue-background:#060636; */
   --text-color: #252729;
   --bold-text-color: #070707;
   --hover-color: #555555;
@@ -52,4 +52,7 @@ h2 {
 .description-cv {
   text-align: center;
   color: var(--text-color);
+}
+body {
+  display: block;
 }

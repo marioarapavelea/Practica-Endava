@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   /* --primary-background-color:#E8DED2;
      --petrol-color:#056676;
@@ -122,4 +123,50 @@
 }
 .socials a:hover i {
   color: blueviolet;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-bar ul {
+    display: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-bar ul li {
+    background-color: var(--background-color-nav);
+    width: 100%;
+    display: block;
+  }
+
+  #toggle:checked + .nav-bar-items {
+    display: block;
+    padding-top: 10px;
+    margin: 0;
+    width: 100%;
+  }
 }
