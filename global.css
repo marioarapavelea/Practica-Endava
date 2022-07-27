@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   /* --primary-background-color:#E8DED2;
      --petrol-color:#056676;
@@ -30,18 +29,17 @@
   height: 540px;
 }
 
-.video-article {
+/* .video-article {
   display: inline-block;
   text-align: left;
   position: relative;
-}
+} */
 
 /* Navigation bar */
 .nav-bar {
   position: sticky;
   width: 100%;
   top: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +52,7 @@
   text-align: center;
   height: 100%;
   width: 100%;
-  display: flex;
+  display: block;
   align-items: center;
   list-style: none;
   padding: 0 100px;
@@ -62,7 +60,7 @@
 
 .nav-bar li {
   display: inline;
-  float: right;
+  float: left;
 }
 
 .nav-bar ul li a {
@@ -71,6 +69,7 @@
   text-align: center;
   padding: 5px 10px;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .nav-title,
@@ -90,10 +89,7 @@
 .nav-title {
   font-size: 20px;
   color: var(--bold-text-color);
-}
-
-.nav-bar-items {
-  float: right;
+  text-align: left;
 }
 
 /* Footbar */
@@ -168,5 +164,9 @@ label {
     padding-top: 10px;
     margin: 0;
     width: 100%;
+  }
+
+  .nav-title {
+    display: none;
   }
 }

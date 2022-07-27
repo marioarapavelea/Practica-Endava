@@ -1,16 +1,12 @@
-:root {
-  /* --primary-background-color:#E8DED2;
-        --petrol-color:#056676;
-        --light-petrol-color: #5EAAA8;
-        --link-hover-background-color:#A3D2CA;
-        --antique-white-color:#faebd7;
-        --dark-blue-background:#060636; */
+/* :root {
+
   --text-color: #252729;
   --bold-text-color: #070707;
   --hover-color: #555555;
   --border-color: #a2a2a2;
   --background-color-nav: #f4f4f4;
-}
+} */
+@import "./global.css";
 
 * {
   margin: 0;
@@ -52,4 +48,16 @@ h2 {
 .description-cv {
   text-align: center;
   color: var(--text-color);
+}
+
+@media only screen and (max-width: 465px) {
+  .cv-article {
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: center;
+    text-align: center;
+  }
+  .cv-article h2 {
+    font-size: 10px;
+  }
 }
