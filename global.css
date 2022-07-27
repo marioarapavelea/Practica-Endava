@@ -1,0 +1,125 @@
+:root {
+  /* --primary-background-color:#E8DED2;
+     --petrol-color:#056676;
+     --light-petrol-color: #5EAAA8;
+     --link-hover-background-color:#A3D2CA;
+     --antique-white-color:#faebd7;
+     --dark-blue-background:#060636; */
+  --text-color: #252729;
+  --bold-text-color: #070707;
+  --hover-color: #555555;
+  --border-color: #a2a2a2;
+  --background-color-nav: #f4f4f4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #page-title{
+        background-image: url(Images/diagonal-motion-lines-white-background_1017-33198.webp);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+     } */
+
+#video-home {
+  width: 620px;
+  height: 540px;
+}
+
+.video-article {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+}
+
+/* Navigation bar */
+.nav-bar {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: var(--background-color-nav);
+}
+
+.nav-bar ul {
+  list-style: none;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0 100px;
+}
+
+.nav-bar li {
+  display: inline;
+  float: right;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: var(--text-color);
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.nav-title,
+.nav-bar a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+  color: var(--hover-color);
+  font-size: larger;
+}
+
+.nav-title {
+  font-size: 20px;
+  color: var(--bold-text-color);
+}
+
+.nav-bar-items {
+  float: right;
+}
+
+/* Footbar */
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--bold-text-color);
+  border: 1.1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 50%;
+}
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: blueviolet;
+}

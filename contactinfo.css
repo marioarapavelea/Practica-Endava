@@ -1,0 +1,87 @@
+:root {
+  --text-color: #252729;
+  --bold-text-color: #070707;
+  --hover-color: #555555;
+  --border-color: #a2a2a2;
+  --background-color-nav: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+  /* filter: blur(8px); */
+}
+
+.contact-wraper {
+  box-sizing: content-box;
+  height: 500px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-nav);
+  opacity: 0.9;
+  z-index: 0;
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+.contact-form {
+  color: var(--text-color);
+  z-index: 1;
+}
+
+#title-form {
+  color: var(--bold-text-color);
+  margin-bottom: 30px;
+}
+
+.contact-form button {
+  border: solid var(--border-color) 5px;
+}
+
+input {
+  text-align: center;
+  display: inline-block;
+  float: center;
+}
+
+label {
+  display: inline-block;
+  float: center;
+  text-align: center;
+  clear: left;
+  width: 150px;
+  text-align: right;
+}
+
+.button-submit:hover {
+  background-color: var(--bold-text-color);
+  color: var(--background-color-nav);
+}
+
+.hover-elem:hover {
+  color: var(--hover-color);
+}
+
+input:hover,
+textarea:hover {
+  border: solid var(--text-color) 2px;
+}
