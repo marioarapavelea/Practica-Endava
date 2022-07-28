@@ -29,7 +29,7 @@
 .contact-wraper {
   box-sizing: content-box;
   height: 400px;
-  width: 80%;
+  width: 700px;
 
   margin: 0 auto;
   margin-top: 30px;
@@ -45,10 +45,13 @@
   color: var(--text-color);
 }
 
+.nav-bar {
+  z-index: 1;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-; */
 }
 .form-items {
   display: flex;
@@ -106,4 +109,50 @@ textarea:hover {
 
 .input-group input:hover {
   height: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-wraper {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    border-radius: 0px;
+    position: relative;
+    background-color: var(--bold-text-color);
+    color: var(--background-color-nav);
+  }
+
+  .contact-form {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-items,
+  .message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--background-color-nav);
+  }
+
+  .title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .input-group ::placeholder,
+  textarea::placeholder {
+    color: var(--background-color-nav);
+  }
+
+  .button-submit {
+    background: var(--background-color-nav);
+    color: var(--bold-text-color);
+  }
+
+  input:hover,
+  textarea:hover {
+    border: solid var(--background-color-nav) 2px;
+    color: var(--background-color-nav);
+  }
 }
