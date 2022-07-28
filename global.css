@@ -92,7 +92,7 @@
   text-align: left;
 }
 
-/* Footbar */
+/* Footer */
 .socials {
   list-style: none;
   display: flex;
@@ -130,7 +130,7 @@ footer {
 label {
   margin: 0 40px 0 0;
   font-size: 26px;
-  line-height: 70px;
+  line-height: 60px;
   display: none;
   width: 26px;
   float: right;
@@ -168,5 +168,8 @@ label {
 
   .nav-title {
     display: none;
+  }
+  .nav-bar {
+    display: block;
   }
 }
