@@ -127,7 +127,7 @@ footer {
   width: 100%;
 }
 
-label {
+.nav-bar label {
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 60px;
@@ -136,12 +136,12 @@ label {
   float: right;
 }
 
-#toggle {
+.nav-bar #toggle {
   display: none;
 }
 
 @media only screen and (max-width: 1000px) {
-  label {
+  .nav-bar label {
     display: block;
     cursor: pointer;
   }
@@ -159,7 +159,7 @@ label {
     display: block;
   }
 
-  #toggle:checked + .nav-bar-items {
+  .nav-bar #toggle:checked + .nav-bar-items {
     display: block;
     padding-top: 10px;
     margin: 0;

@@ -1,3 +1,4 @@
+@import url(./contactinfo.css);
 :root {
   --text-color: #252729;
   --bold-text-color: #070707;
@@ -9,34 +10,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: poppins;
 }
-#body-login {
-  /* background-color: #060636 ; */
-  /* background-color: var(--border-color); */
+
+body {
+  background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+  background-color: #000000;
+
+  height: 1000px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  overflow: hidden;
+}
+
+.login-box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: whitesmoke;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.login-box h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  margin-top: 20px;
+  color: var(--bold-text-color);
+}
+
+.login-box .login-form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.text-field input {
+  width: 100%;
+  background: transparent;
   color: var(--text-color);
+  border-radius: 40px;
+  font-family: poppins;
+  font-size: 18px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-input {
+.signup-link,
+.remember-me {
+  font-size: 18px;
   text-align: center;
-  display: inline-block;
-  float: center;
+  color: var(--text-color);
+  margin-bottom: 15px;
 }
 
-label {
-  display: inline-block;
-  float: center;
-  text-align: center;
-  clear: left;
-  width: 150px;
-  text-align: right;
+.signup-link a {
+  color: var(--bold-text-color);
+  text-decoration: none;
+}
+.signup-link a:hover {
+  color: purple;
 }
 
-/* .button-submit:hover {
-    background-color: var(--bold-text-color);
-    color: var(--background-color-nav);
-  } */
+.submit {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
-.hover-elem:hover {
-  color: var(--hover-color);
+.button-submit:hover {
+  background-color: purple;
 }
