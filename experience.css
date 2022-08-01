@@ -1,0 +1,65 @@
+:root {
+  --text-color: #252729;
+  --bold-text-color: #070707;
+  --hover-color: #555555;
+  --border-color: #a2a2a2;
+  --background-color-nav: #f4f4f4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.article-experience {
+  padding: 0.3rem;
+  background-color: var(--background-color-nav);
+  margin-left: 5px;
+  margin-right: 10px;
+  display: inline-block;
+  /* float: left; */
+}
+
+#experience {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  background: white;
+}
+
+.article-studies {
+  /* float: right; */
+  padding: 0.3rem;
+  background-color: var(--background-color-nav);
+  margin-right: 5px;
+  display: inline-block;
+}
+
+#studies {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  background: white;
+}
+
+footer {
+  display: block;
+  margin-top: 50px;
+}
+
+body {
+  align-items: center;
+  text-align: center;
+}
+
+.page-title {
+  text-align: center;
+  /* margin: 0 auto; */
+}
+
+header {
+  margin-top: 50px;
+}
+.main-cv {
+  margin-top: 50px;
+}
