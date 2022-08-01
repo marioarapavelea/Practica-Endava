@@ -29,18 +29,17 @@
   height: 540px;
 }
 
-.video-article {
+/* .video-article {
   display: inline-block;
   text-align: left;
   position: relative;
-}
+} */
 
 /* Navigation bar */
 .nav-bar {
   position: sticky;
   width: 100%;
   top: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,7 +52,7 @@
   text-align: center;
   height: 100%;
   width: 100%;
-  display: flex;
+  display: block;
   align-items: center;
   list-style: none;
   padding: 0 100px;
@@ -61,7 +60,7 @@
 
 .nav-bar li {
   display: inline;
-  float: right;
+  float: left;
 }
 
 .nav-bar ul li a {
@@ -70,6 +69,7 @@
   text-align: center;
   padding: 5px 10px;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .nav-title,
@@ -89,10 +89,7 @@
 .nav-title {
   font-size: 20px;
   color: var(--bold-text-color);
-}
-
-.nav-bar-items {
-  float: right;
+  text-align: left;
 }
 
 /* Footbar */
@@ -122,4 +119,54 @@
 }
 .socials a:hover i {
   color: blueviolet;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-bar ul {
+    display: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-bar ul li {
+    background-color: var(--background-color-nav);
+    width: 100%;
+    display: block;
+  }
+
+  #toggle:checked + .nav-bar-items {
+    display: block;
+    padding-top: 10px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-title {
+    display: none;
+  }
 }
