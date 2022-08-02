@@ -1,0 +1,141 @@
+@import url(./global.css);
+/* @import url(./contactinfo.css); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-list {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background: whitesmoke;
+  border-radius: 10px;
+}
+
+#add-task {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 20px 50px 20px;
+  /* background-color: ; */
+}
+
+#input-list {
+  width: 100%;
+  background: transparent;
+  color: var(--text-color);
+  border-radius: 40px;
+  font-family: poppins;
+  font-size: 18px;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+}
+
+#btn-add {
+  background: var(--bold-text-color);
+  color: var(--background-color-nav);
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 40px;
+  font-family: poppins;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.container-list > h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container-list > h2 {
+  margin-top: 20px;
+  /* color: var(--text-color); */
+  font-size: 18px;
+}
+
+#icon-list {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.task-item-added {
+  display: flex;
+
+  border: solid 1px var(--bold-text-color);
+  border-radius: 5px;
+  position: relative;
+  margin: 0px;
+  height: 30px;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(212, 209, 212);
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.tasks-container > p {
+  font-size: 22px;
+  margin: 5px;
+  color: rgb(26, 99, 121);
+}
+
+#task-item ul li {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: stretch;
+  /* background-color: #c5e1e6;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #939697;
+  cursor: pointer; */
+}
+
+.task-item-added li {
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.task-item-added button {
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(26, 99, 121);
+  margin-left: 10px;
+
+  /* font-size: 10px; */
+}
+
+.task-item-added > li {
+  display: flex;
+  justify-content: left;
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list</title>
+    <link rel="stylesheet" href="./todolist.css" />
+    <link rel="stylesheet" href=" https://www.flaticon.com/" />
+  </head>
+  <body>
+    <article>
+        <nav class="nav-bar">
+            <div class="nav-title">MARIOARA PAVELEA</div>
+            <label for="toggle" onclick="myFunction()" id="dropdown">&#9776</label>
+            <input type="checkbox" id="toggle"> 
+            <ul class="nav-bar-items">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./experience.html">Experience</a></li>
+              <li><a href="./contactinfo.html">Contact Informations</a></li>
+              <li><a href="./login.html">Login</a></li>
+            </ul>
+          </nav>
+    </article>
+    <article class="container-list">
+      <h1>To do list</h1>
+      <article>
+        <img src="./Images/task-icon.png" alt="icon-todo" id="icon-list" />
+      </article>
+      <!-- <h2 class="text-todo">Add your first task</h2> -->
+      <article id="add-task">
+        <input type="text" id="input-list" placeholder="Add your task..." />
+        <button id="btn-add" class="button-submit">Add</button>
+      </article>
+
+      <article id="tasks" class="tasks-container">
+        <p>Your tasks:</p>
+        <ul id="task-item"></ul>
+      </article>
+    </article>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
