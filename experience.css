@@ -25,7 +25,7 @@
   margin: 10px;
 }
 .experience {
-  height: 250px;
+  height: 310px;
   width: 250px;
   background-color: var(--background-color-nav);
   color: var(--);
@@ -36,7 +36,7 @@
 }
 
 .experience:hover {
-  height: 300px;
+  height: 320px;
   width: 260px;
 }
 
@@ -109,4 +109,11 @@
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
   margin-top: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .article-experience {
+    display: flex;
+    flex-direction: column;
+  }
 }
