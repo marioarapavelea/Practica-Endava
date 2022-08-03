@@ -34,7 +34,7 @@ addButton.addEventListener("click", function () {
 });
 
 // Navigation Bar
-const burgerMenu = document.querySelector(".nav-bar-items");
-burgerMenu.addEventListener("click", function () {
-  burgerMenu.classList.toggle("active");
-});
+var navbar = document.createElement("NAV");
+var titleNav = document.createElement("div");
+
+navbar.appendChild(titleNav);
