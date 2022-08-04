@@ -1,3 +1,5 @@
+@import url(./global.css);
+@import url(./contactinfo.css);
 * {
   margin: 0;
   padding: 0;
