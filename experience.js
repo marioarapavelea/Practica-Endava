@@ -4,7 +4,7 @@ const experiences = [
     name: "Summer practice",
     department: "Front-end",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident repudiandae atque earum, nobis eum consequatur sint maiores tempora soluta architecto aspernatur iure repellat quidem dolor ullam vitae? Ipsa, necessitatibus.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident repudiandae atque  earum, nobis eum consequatur sint maiores tempora soluta architecto aspernatur iure repellat quidem dolor ullam vitae? Ipsa, necessitatibus.",
     company: "Endava",
     startDate: "2022-07-11",
     endDate: "2022-07-11",
@@ -27,9 +27,11 @@ const experiences = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident repudiandae atque earum, nobis eum consequatur sint maiores tempora soluta architecto aspernatur iure repellat quidem dolor ullam vitae? Ipsa, necessitatibus.",
     company: "xxxxxx",
     startDate: "2020-05-12",
-    endDate: "2020-08-12",
+    endDate: "2021-08-12",
   },
 ];
+
+console.log(experiences);
 
 function generateExperienceSection(experience) {
   const experienceField = document.createElement("div");
@@ -75,12 +77,24 @@ function populateExperienceContainer(experienceElem) {
 function byDateDay(a, b) {
   const d1 = new Date(a.endDate);
   const d2 = new Date(b.endDate);
-  if (d1.getUTCMonth() > d2.getUTCMonth()) {
+  if (d1.getUTCFullYear() > d2.getUTCFullYear()) {
     return 1;
-  } else if (d1.getUTCMonth() < d2.getUTCMonth()) {
+  } else if (d1.getUTCFullYear() < d2.getUTCFullYear()) {
     return -1;
-  } else {
-    return d2.getUTCDate() - d1.getUTCDate();
+  } else if (d1.getUTCFullYear() == d2.getUTCFullYear()) {
+    if (d1.getUTCMonth() > d2.getUTCMonth()) {
+      return 1;
+    } else if (d1.getUTCMonth() < d2.getUTCMonth()) {
+      return -1;
+    } else if (d1.getUTCMonth() == d2.getUTCMonth()) {
+      if (d1.getUTCDay() > d2.getUTCDate()) {
+        return 1;
+      } else if (d1.getUTCDay() < d2.getUTCDate()) {
+        return -1;
+      } else {
+        return 0;
+      }
+    }
   }
 }
 populateExperienceContainer(experiences.sort(byDateDay));
@@ -88,12 +102,19 @@ populateExperienceContainer(experiences.sort(byDateDay));
 // Show more/less
 const box = document.querySelector(".experience");
 
-let isOpen = false;
+let isOpen;
 document.querySelector("button").addEventListener("click", () => {
   isOpen = !isOpen;
   if (isOpen) {
     box.classList.add("open");
+    // const lessText = descr.substring(0, 50);
+    // descr.innerText = lessText;
   } else {
     box.classList.remove("open");
   }
 });
+// const descr = document.getElementsByClassName("description-experience");
+// const descText = descr.innerText;
+// const lessText = descr.substring(0, 50);
+// descr.innerText = lessText;
+// console.log(lessText);
