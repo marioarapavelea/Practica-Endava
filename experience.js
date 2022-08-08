@@ -8,6 +8,7 @@ const experiences = [
     company: "Endava",
     startDate: "2022-07-11",
     endDate: "2022-07-11",
+    // endDate: new Date("2022-07-11"),
   },
   {
     id: 2,
@@ -54,6 +55,8 @@ function generateExperienceSection(experience) {
   const endDateExp = document.createElement("p");
   endDateExp.innerText = "End Date: " + experience.endDate;
 
+  showMoreBtn.addEventListener("click", toggle);
+
   experienceField.appendChild(nameExp);
   experienceField.appendChild(departmentExp);
   experienceField.appendChild(companyExp);
@@ -74,6 +77,8 @@ function populateExperienceContainer(experienceElem) {
   });
 }
 
+// Sort by date
+
 function byDateDay(a, b) {
   const d1 = new Date(a.endDate);
   const d2 = new Date(b.endDate);
@@ -81,12 +86,12 @@ function byDateDay(a, b) {
     return 1;
   } else if (d1.getUTCFullYear() < d2.getUTCFullYear()) {
     return -1;
-  } else if (d1.getUTCFullYear() == d2.getUTCFullYear()) {
+  } else if (d1.getUTCFullYear() === d2.getUTCFullYear()) {
     if (d1.getUTCMonth() > d2.getUTCMonth()) {
       return 1;
     } else if (d1.getUTCMonth() < d2.getUTCMonth()) {
       return -1;
-    } else if (d1.getUTCMonth() == d2.getUTCMonth()) {
+    } else if (d1.getUTCMonth() === d2.getUTCMonth()) {
       if (d1.getUTCDay() > d2.getUTCDate()) {
         return 1;
       } else if (d1.getUTCDay() < d2.getUTCDate()) {
@@ -97,6 +102,7 @@ function byDateDay(a, b) {
     }
   }
 }
+
 populateExperienceContainer(experiences.sort(byDateDay));
 
 // Show more/less

@@ -34,7 +34,12 @@
   opacity: 0.9;
   z-index: 0;
   border-radius: 5px;
-  color: var(--text-color);
+  color: va(--bold-text-color);
+  background-color: rgb(216, 215, 219);
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .nav-bar {
@@ -84,6 +89,7 @@
 
 .title {
   margin-bottom: 30px;
+  color: var(--bold-text-color);
 }
 
 .message > textarea {
@@ -131,6 +137,7 @@ textarea:hover {
   .title {
     margin-bottom: 30px;
     margin-top: 30px;
+    color: var(--background-color-nav);
   }
   .input-group ::placeholder,
   textarea::placeholder {
@@ -145,6 +152,15 @@ textarea:hover {
   input:hover,
   textarea:hover {
     border: solid var(--background-color-nav) 2px;
+    color: var(--background-color-nav);
+  }
+
+  .message > textarea,
+  .input-group > input {
+    color: var(--background-color-nav);
+  }
+
+  .subj {
     color: var(--background-color-nav);
   }
 }
