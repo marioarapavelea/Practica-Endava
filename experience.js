@@ -40,6 +40,7 @@ function generateExperienceSection(experience) {
 
   const nameExp = document.createElement("h2");
   nameExp.innerText = experience.name;
+  nameExp.classList = "exp-name";
   const departmentExp = document.createElement("p");
   departmentExp.innerText = experience.department;
   const descriptionExp = document.createElement("p");
@@ -124,3 +125,18 @@ document.querySelector("button").addEventListener("click", () => {
 // const lessText = descr.substring(0, 50);
 // descr.innerText = lessText;
 // console.log(lessText);
+
+// Search
+function searchFunction() {
+  let input = document.getElementById("search").value;
+  input = input.toLowerCase();
+  let expBox = document.getElementsByClassName("experience");
+
+  for (let i = 0; i < expBox.length; i++) {
+    if (!expBox[i].innerHTML.toLowerCase().includes(input)) {
+      expBox[i].style.display = "none";
+    } else {
+      expBox[i].style.display = "list-item";
+    }
+  }
+}
