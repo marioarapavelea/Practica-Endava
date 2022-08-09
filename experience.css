@@ -102,12 +102,3 @@
     border: 1px solid #ccc;
   }
 }
-
-.prep .main-cv {
-  opacity: 0;
-}
-
-.experience {
-  opacity: 1;
-  transition: opacity 3s ease-in;
-}

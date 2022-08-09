@@ -119,9 +119,19 @@ function searchFunction() {
     }
   }
 }
-const mainCV = document.getElementsByClassName("main-cv");
-mainCV.classList.add("prep");
 
-function transitionFcn() {
-  mainCV.classList.remove("prep");
-}
+// Transition
+const main = document.querySelector("main");
+const cards = document.getElementsByClassName("experience");
+const fade = () => {
+  setTimeout(() => {
+    main.classList.toggle("fade-out");
+  }, 1000);
+
+  setTimeout(() => {
+    cards.classList.remove("slide-before");
+    cards.classList.add("slide-after");
+  }, 4000);
+};
+
+main.addEventListener("load", fade());
