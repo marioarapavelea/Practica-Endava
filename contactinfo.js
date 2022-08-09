@@ -2,6 +2,18 @@ const inputMessage = document.getElementById("message");
 const inputSubj = document.getElementById("subj");
 const submitBtn = document.getElementById("submit-contact");
 
+function loadFunction() {
+  const k = localStorage.length - 1;
+  const keyL = localStorage.key(k);
+  const storedValue = localStorage.getItem(keyL);
+  console.log(storedValue);
+  if (storedValue) {
+    inputMessage.value = storedValue;
+  } else {
+    inputMessage.value = "";
+  }
+}
+
 submitBtn.addEventListener("click", function () {
   const key = inputSubj.value;
   const value = inputMessage.value;
@@ -12,17 +24,6 @@ submitBtn.addEventListener("click", function () {
   if (key && value) {
     localStorage.setItem(key, value);
     location.reload();
-  }
-});
-
-inputMessage.addEventListener("load", function () {
-  const k = localStorage.length;
-  const keyL = localStorage.key(k);
-  const storedValue = localStorage.getItem(keyL);
-  if (storedValue) {
-    inputMessage.value = storedValue;
-  } else {
-    inputMessage.value = "";
   }
 });
 
