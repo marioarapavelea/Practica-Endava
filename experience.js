@@ -119,3 +119,9 @@ function searchFunction() {
     }
   }
 }
+const mainCV = document.getElementsByClassName("main-cv");
+mainCV.classList.add("prep");
+
+function transitionFcn() {
+  mainCV.classList.remove("prep");
+}
