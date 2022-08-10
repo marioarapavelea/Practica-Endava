@@ -3,6 +3,7 @@ const inpFName = document.getElementById("fname");
 const inpLName = document.getElementById("lname");
 const inpEmail = document.getElementById("email");
 const inpPhone = document.getElementById("phone");
+const remembMe = document.getElementById("rememberme");
 
 const submitBtn = document.getElementById("submit-contact");
 
@@ -33,32 +34,11 @@ submitBtn.addEventListener("click", function () {
   console.log(value, key);
 
   if (key && value) {
-    localStorage.setItem(key, value);
-    location.reload();
+    if (remembMe.checked) {
+      localStorage.setItem(key, value);
+      location.reload();
+    } else {
+      localStorage.setItem(key, "");
+    }
   }
 });
-
-// Remember me
-const remembMe = document.getElementById("rememberme");
-const firstname = document.getElementById("fname").value;
-const lastname = document.getElementById("lname").value;
-const email = document.getElementById("email").value;
-const phone = document.getElementById("phone").value;
-
-if (localStorage.checkbox && localStorage.checkbox !== "") {
-  remembMe.setAttribute("checked", "checked");
-  firstname.value = localStorage.user;
-} else {
-  remembMe.removeAttribute("checked");
-  firstname.value = "";
-}
-
-function rememberMeFcn() {
-  if (remembMe.checked && firstname.value !== "") {
-    localStorage.username = firstname.value;
-    localStorage.checkbox = remembMe.value;
-  } else {
-    localStorage.username = "";
-    localStorage.checkbox = "";
-  }
-}
