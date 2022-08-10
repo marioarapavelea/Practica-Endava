@@ -112,11 +112,12 @@ textarea:hover {
 @media only screen and (max-width: 700px) {
   .contact-wraper {
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin: 0;
     border-radius: 0px;
     position: relative;
-    background-color: var(--bold-text-color);
+    /* background-color: var(--bold-text-color); */
+    background-color: rgb(17, 8, 8);
     color: var(--background-color-nav);
   }
 
@@ -151,8 +152,9 @@ textarea:hover {
 
   input:hover,
   textarea:hover {
-    border: solid var(--background-color-nav) 2px;
-    color: var(--background-color-nav);
+    border: solid var(--background-color-nav) 1px;
+
+    color: purple;
   }
 
   .message > textarea,
@@ -160,7 +162,7 @@ textarea:hover {
     color: var(--background-color-nav);
   }
 
-  .subj {
-    color: var(--background-color-nav);
+  .input-group input {
+    border: 1px solid var(--background-color-nav);
   }
 }

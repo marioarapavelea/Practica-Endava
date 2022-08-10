@@ -36,7 +36,7 @@ submitBtn.addEventListener("click", function () {
   if (key && value) {
     if (remembMe.checked) {
       localStorage.setItem(key, value);
-      location.reload();
+      loadFunction();
     } else {
       localStorage.setItem(key, "");
     }
