@@ -9,6 +9,7 @@ addButton.addEventListener("click", function () {
   liTask.innerText = inputField.value;
 
   const deleteBtn = document.createElement("button");
+
   deleteBtn.textContent = "\u00D7";
   deleteBtn.className = "btn-delete";
   liTask.appendChild(deleteBtn);
@@ -28,5 +29,10 @@ addButton.addEventListener("click", function () {
   liTask.addEventListener("click", function () {
     liTask.style.textDecoration = "line-through";
     liTask.style.color = "#252729";
+  });
+
+  liTask.addEventListener("dblclick", function () {
+    liTask.style.textDecoration = "none";
+    liTask.style.userSelect = "none";
   });
 });
