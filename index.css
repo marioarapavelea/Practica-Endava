@@ -27,6 +27,9 @@ h2 {
 .cv-article h2 {
   font-size: 18px;
   color: var(--text-color);
+
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .cv-article {

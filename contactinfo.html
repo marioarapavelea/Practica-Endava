@@ -64,14 +64,7 @@
                 required
                 placeholder="Telephone"
               />
-              <input
-              class="input-group"
-              type="text"
-              id="subj"
-              name="subject"
-              required
-              placeholder="Subject" 
-              />
+
             </article>
             <article class="message">
 
@@ -86,10 +79,11 @@
               ></textarea>
               <br>
 
-              <input type="checkbox" name="rememberme" id="rememberme" onclick="rememberMeFcn()">
-              Remember me
+              <input type="checkbox" name="rememberme" id="rememberme" value="isRememberMe" >
+              <label for="rememberme">Remember me</label>
+              
               <br>
-              <input class="button-submit" type="submit" value="Submit" id="submit-contact" />
+              <input class="button-submit" type="submit" value="Submit" id="submit-contact" onclick="rememberMeFcn()" />
             </article>
           </article>
         </form>
