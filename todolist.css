@@ -1,9 +1,14 @@
 @import url(./global.css);
-/* @import url(./contactinfo.css); */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 .container-list {
   display: flex;
@@ -11,11 +16,10 @@
   flex-direction: column;
   justify-content: center;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
+  align-items: center;
+  margin: 10%;
+  margin-top: 5%;
+
   background: whitesmoke;
   border-radius: 10px;
 }
@@ -25,9 +29,8 @@
   text-align: center;
   flex-direction: row;
   justify-content: center;
-
+  width: 60%;
   margin: 20px 50px 20px;
-  /* background-color: ; */
 }
 
 #input-list {
@@ -59,7 +62,6 @@
 }
 .container-list > h2 {
   margin-top: 20px;
-  /* color: var(--text-color); */
   font-size: 18px;
 }
 
@@ -70,7 +72,8 @@
 
 .task-item-added {
   display: flex;
-
+  flex-direction: row;
+  gap: 2px;
   border: solid 1px var(--bold-text-color);
   border-radius: 5px;
   position: relative;
@@ -86,6 +89,7 @@
   align-items: center;
   border-radius: 10px;
   margin: 10px;
+  width: 60%;
 }
 
 .tasks-container > p {
@@ -99,43 +103,57 @@
   flex-direction: column;
   margin: 5px;
   align-items: stretch;
-  /* background-color: #c5e1e6;
-  height: 50px;
-  margin-bottom: 8px;
-  padding: 5px 10px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #939697;
-  cursor: pointer; */
 }
 
 .task-item-added li {
   font-family: "poppins", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  position: absolute;
+  display: flex;
+  flex-direction: row;
+  float: left;
   left: 0;
-  top: 0;
 }
 .task-item-added button {
-  position: absolute;
-  right: 0;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-left: auto;
+  margin-right: 0px;
+
   padding: 5px;
   border-radius: 5px;
   color: black;
   background-color: rgb(26, 99, 121);
-  margin-left: 10px;
-
-  /* font-size: 10px; */
 }
 
 .task-item-added > li {
   display: flex;
   justify-content: left;
-  /* position: absolute;
-  left: 0;
-  top: 0; */
+}
+
+.task-item-added text {
+  float: left;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+@media screen and (max-width: 700px) {
+  .container-list {
+    margin: 10px;
+    margin-top: 5%;
+  }
+
+  #add-task {
+    width: 90%;
+  }
+
+  .tasks-container {
+    margin: 10px;
+    width: 90%;
+  }
 }

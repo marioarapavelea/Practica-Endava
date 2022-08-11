@@ -9,7 +9,7 @@
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
   />
   </head>
-  <body id="body-login">
+  <body id="body-login" onload = " loadFunction()" >
     <nav class="nav-bar">
       <div class="nav-title">MARIOARA PAVELEA</div>
       <label for="toggle">&#9776</label>
@@ -17,15 +17,14 @@
       <ul class="nav-bar-items">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./experience.html">Experience</a></li>
-        <li><a href="./contactinfo.html">Contact Informations</a></li>
-        <li><a href="./login.html">Login</a></li>
+        <li><a href="./contactinfo.html">Contact us</a></li>
       </ul>
     </nav>
 
     <main>
       <video
         id="video"
-        src="Images/3250278545.mp4"
+        src="Images/production ID_5136301.mp4"
         autoplay
         muted
         loop
@@ -61,12 +60,14 @@
                 type="tel"
                 id="phone"
                 name="phone"
-                pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                
                 required
                 placeholder="Telephone"
               />
+
             </article>
             <article class="message">
+
               <textarea
                 name="message"
                 id="message"
@@ -76,7 +77,15 @@
                 required
                 placeholder="Leave a message."
               ></textarea>
-              <input class="button-submit" type="submit" value="Submit" />
+              <br>
+             <article class="remMeCheckbox">
+              <input type="checkbox" name="rememberme" id="rememberme" value="isRememberMe" >
+              <label for="rememberme">Remember me</label>
+             </article>
+
+              
+              <br>
+              <input class="button-submit" type="submit" value="Submit" id="submit-contact"  />
             </article>
           </article>
         </form>
@@ -100,6 +109,7 @@
           </li>
         </ul>
       </footer>
+      <script src="./contactinfo.js"></script>
     </main>
   </body>
 </html>
