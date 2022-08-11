@@ -7,7 +7,7 @@ const experiences = [
     startDate: "2022-07-11",
     endDate: "2022-07-11",
     description:
-      ' <br> <p>Programming Languages:</p> <p>JavaScript, HTML, CSS </p> <br> <p>Projects:</p> <ul style="list-style-type: none; "><li><a href="./todolist.html" style="text-decoration: none;">To-do List</a></li> <li><a href="./login.html" style="text-decoration: none;">Login</a></li></ul> ',
+      ' <br> <p>Programming Languages:</p> <p>JavaScript, HTML, CSS </p> <br> <p>Projects:</p> <ul style="list-style-type: none; "><li><a href="./todolist.html" style="text-decoration: none;">To-do List</a></li> <li><a href="./login.html" style="text-decoration: none;  ">Login</a></li></ul> ',
   },
 
   {
